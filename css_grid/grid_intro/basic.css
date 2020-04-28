@@ -1,0 +1,95 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcoral;
+    color: ghostwhite;
+    margin: 0;
+    padding: 0;
+}
+header, footer, aside, section, article{
+    padding: 1em;
+    border-radius: 1rem;
+}
+footer{
+    text-align: center;
+}
+header, footer{
+    background-color: rosybrown;
+}
+aside, section{
+    background-color: sandybrown;
+}
+article{
+    background-color: seagreen;
+    color: seashell;
+}
+button{
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0.5em;
+}
+button:hover{
+    color: ghostwhite;
+    background-color: darkblue;
+}
+section aside{
+    background-color: lightgreen;
+}
+section aside a{
+    color: ghostwhite;
+    text-decoration: none;
+    background-color: #f2c335;
+    border-radius: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em;
+    margin-top: 1em;
+    display: inline-block;
+}
+section aside a:hover{
+    color: #333;
+    background-color: lavender;
+}
+aside ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+aside ul a{
+    color: lightsteelblue;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+}
+aside ul a:hover{
+    color: #333;
+}
+blockquote{
+    margin: 0;
+    padding: 0;
+    background-color: rebeccapurple;
+    color:peru;
+    border-radius: 0.5em;
+}
+blockquote p{
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+blockquote cite::before{
+    content: "\2014\00a0";
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 1em;
+}

@@ -1,0 +1,43 @@
+.wrapper{
+    display: grid;
+    grid-gap: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "article" "sidebar";
+}
+.wrapper > *{
+    padding: 1em;
+    border-radius: 0.5em;
+}
+header{
+    background-color: darkorange;
+    color: darkcyan;
+    grid-area: header;
+}
+article{
+    background-color: lightblue;
+    color: darkmagenta;
+    grid-area: article;
+}
+aside{
+    background-color: lightslategray;
+    color: ghostwhite;
+    grid-area: sidebar;
+}
+@media only screen and (min-width: 678px){
+    .wrapper{
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "sidebar article article article" 
+        "header header header header";
+    }
+}
+@media only screen and (min-width: 1000px){
+    .wrapper{
+        grid-template-areas:  
+        "header header header header"
+        "sidebar article article article";
+    }
+}

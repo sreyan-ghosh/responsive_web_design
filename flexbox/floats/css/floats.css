@@ -1,0 +1,77 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    color: #2772b0;
+}
+.wrapper{
+    width: 97%;
+    max-width: 1200px;
+    margin: 0 auto;
+    float: none;
+    background-color: #fff;
+}
+div img{
+    width: 100%;
+    max-width: 250px;
+}
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+[class*='col-']{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    min-height: 1px;
+}
+.col-1-2, .col-1-4{
+    background-color: rgb(255, 204, 244);
+}
+.col-2{
+    background-color: rgb(255, 200, 190);
+}
+.col-3{
+    background-color: rgb(169, 255, 205);
+}
+.col-4{
+    background-color: #fff7cc;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px){
+    [class*='col-']{
+        margin-right: 0;
+        min-height: 1px;
+        float: left;
+    }
+    .col-1-2, .col-2{
+        width: 44%;
+    }
+    .col-1-4, .col-3, .col-4{
+        width: 92%;
+    }
+}
+
+/* Desktop Screen Size */
+@media only screen and (min-width: 768px){
+    .col-1-2, .col-1-4{
+        width: 20%;
+    }
+    .col-2{
+        width: 44%;
+    }
+    .col-3{
+        width: 68%;
+    }
+    .col-4{
+        width: 92%;
+    }
+}
