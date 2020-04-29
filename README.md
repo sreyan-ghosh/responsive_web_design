@@ -6,4 +6,6 @@
 
 -> Final Website in final folder (buggy)
 
+-> Website published at https://sreyan-ghosh.github.io/responsive_web_design/final/index.html
+
 
